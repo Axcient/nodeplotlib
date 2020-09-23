@@ -74,9 +74,9 @@ export class Server {
 
   private openWindow(location: string) {
     switch (type()) {
-      case 'Linux': exec(`xdg-open ${location}`); break;
-      case 'Darwin': exec(`open ${location}`); break;
-      case 'Windows_NT': exec(`start ${location}`); break;
+      case 'Linux': break;
+      case 'Darwin': break;
+      case 'Windows_NT': break;
     }
   }
 
